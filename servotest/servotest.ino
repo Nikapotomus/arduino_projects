@@ -43,7 +43,7 @@ void loop() {
 
 void flicker_led() {
   digitalWrite(LED_BUILTIN, HIGH);
-  delay(200);
+  delay(1000);
   digitalWrite(LED_BUILTIN, LOW);
-  delay(200);
+  delay(1000);
 }
