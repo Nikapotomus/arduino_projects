@@ -20,18 +20,19 @@ Adafruit_SSD1306 display(OLED_DC, OLED_RESET, OLED_CS);
 
 
 void setup() {
+  
   display.begin(SSD1306_SWITCHCAPVCC);
   display.display();
   delay(1000);
   display.clearDisplay();
-  display.setTextSize(1);
+  display.setTextSize(2);
   display.setTextColor(WHITE);
 
   Serial.begin(9600);
+  Serial.print("[*] Finished Initialising Script! \n"); 
 }
 void loop()
 {
-
   static unsigned long thisMicros = 0;
   static unsigned long lastMicros = 0;
 
